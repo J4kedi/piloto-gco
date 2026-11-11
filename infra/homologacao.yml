@@ -1,0 +1,16 @@
+# Homologação: suba só por `node scripts/gco.mjs homologar` (constrói a imagem do HEAD e define IMAGEM_HOMOLOG).
+name: gco-homolog
+
+services:
+  app:
+    image: ${IMAGEM_HOMOLOG:?rode node scripts/gco.mjs homologar}
+    env_file: homologacao.env
+    ports:
+      - "127.0.0.1:${PORTA_HOMOLOG:-8081}:3000"
+    volumes:
+      - dados:/dados
+    mem_limit: 128m
+    restart: unless-stopped
+
+volumes:
+  dados:

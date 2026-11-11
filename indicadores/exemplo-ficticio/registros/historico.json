@@ -1,0 +1,64 @@
+{
+ "aviso": "FICTICIO: dados inventados só para o autoteste de indicadores.py",
+ "repositorio": "FICTICIO/piloto-gco-FICTICIO",
+ "coletado_em": "2026-11-14T10:00:00-03:00",
+ "main": "a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5",
+ "marco": "v0.1.0",
+ "commits": [
+  {"sha": "e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3", "pais": ["a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5"], "autor": "ficticio-a", "data": "2026-11-13T22:00:00-03:00", "assunto": "Commit direto em .github sem linha na planilha (FICTICIO)", "arquivos": [".github/pull_request_template.md"], "versoes": []},
+  {"sha": "a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5", "pais": ["a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4", "baba"], "autor": "ficticio-b", "data": "2026-11-13T21:00:00-03:00", "assunto": "Merge pull request #10 (FICTICIO)", "arquivos": ["app/teste.mjs"], "versoes": []},
+  {"sha": "a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4", "pais": ["a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3", "b9b9"], "autor": "ficticio-a", "data": "2026-11-13T17:00:00-03:00", "assunto": "Merge pull request #8 (FICTICIO)", "arquivos": ["scripts/gco.mjs"], "versoes": ["v0.5.0"]},
+  {"sha": "a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3", "pais": ["d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2", "b6b6"], "autor": "ficticio-b", "data": "2026-11-13T08:30:00-03:00", "assunto": "Merge pull request #6 (FICTICIO)", "arquivos": ["app/servidor.mjs"], "versoes": ["v0.4.0", "v0.5.0"]},
+  {"sha": "d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2", "pais": ["d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1"], "autor": "ficticio-a", "data": "2026-11-12T20:00:00-03:00", "assunto": "Registro direto em caminho livre (FICTICIO)", "arquivos": ["registros/execucoes.csv"], "versoes": ["v0.4.0", "v0.5.0"]},
+  {"sha": "d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1", "pais": ["a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2"], "autor": "ficticio-b", "data": "2026-11-12T19:00:00-03:00", "assunto": "Commit direto em caminho controlado (FICTICIO)", "arquivos": ["app/servidor.mjs"], "versoes": ["v0.3.0", "v0.4.0", "v0.5.0"]},
+  {"sha": "a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2", "pais": ["a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1", "b4b4"], "autor": "ficticio-a", "data": "2026-11-12T14:00:00-03:00", "assunto": "Merge pull request #4 (FICTICIO)", "arquivos": ["infra/producao.yml"], "versoes": ["v0.3.0", "v0.4.0", "v0.5.0"]},
+  {"sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1", "pais": ["c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0", "b1b1"], "autor": "ficticio-b", "data": "2026-11-12T10:01:00-03:00", "assunto": "Merge pull request #2 (FICTICIO)", "arquivos": ["app/servidor.mjs", "app/teste.mjs"], "versoes": ["v0.2.0", "v0.3.0", "v0.4.0", "v0.5.0"]}
+ ],
+ "prs": [
+  {"numero": 2, "autor": "ficticio-a", "titulo": "Mudança normal FICTICIO", "corpo": "Demanda: #1\n\n## Evidência de teste\n\nnode --test: 3 testes ok (FICTICIO)\n", "rotulos": ["normal"], "criado_em": "2026-11-12T12:40:00Z", "integrado_em": "2026-11-12T13:01:00Z", "merge_commit": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+   "commits": [{"sha": "b1b1", "data": "2026-11-12T12:20:00Z"}],
+   "reviews": [{"autor": "ficticio-b", "estado": "APPROVED", "em": "2026-11-12T12:55:00Z", "corpo": ""}],
+   "comentarios": []},
+  {"numero": 4, "autor": "ficticio-a", "titulo": "Mudança de risco FICTICIO", "corpo": "Demanda: #\n\nClassificação: risco\n\nLink da aprovação emergencial:\n\nCloses #3\n\n## Evidência de teste\n\n<!-- descreva o teste -->\n\n## Observações\n\nFICTICIO\n", "rotulos": ["risco"], "criado_em": "2026-11-12T16:15:00Z", "integrado_em": "2026-11-12T17:00:00Z", "merge_commit": "a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2",
+   "commits": [{"sha": "b4b4", "data": "2026-11-12T16:10:00Z"}],
+   "reviews": [{"autor": "ficticio-b", "estado": "COMMENTED", "em": "2026-11-12T16:30:00Z", "corpo": "Dúvida FICTICIO"}, {"autor": "revisor-FICTICIO[bot]", "estado": "APPROVED", "em": "2026-11-12T16:40:00Z", "corpo": "bot não é outra pessoa"}],
+   "comentarios": []},
+  {"numero": 6, "autor": "ficticio-b", "titulo": "Emergência aprovada antes FICTICIO", "corpo": "- Demanda: #5\n- Evidência de teste: node --test ok (FICTICIO)\n", "rotulos": ["emergencial"], "criado_em": "2026-11-13T11:20:00Z", "integrado_em": "2026-11-13T11:30:00Z", "merge_commit": "a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3",
+   "commits": [{"sha": "b6b6", "data": "2026-11-13T11:00:00Z"}],
+   "reviews": [{"autor": "ficticio-a", "estado": "COMMENTED", "em": "2026-11-13T18:00:00Z", "corpo": "Revisão posterior FICTICIO"}],
+   "comentarios": []},
+  {"numero": 8, "autor": "ficticio-a", "titulo": "Emergência aprovada depois FICTICIO", "corpo": "Demanda: #7\n\n## Evidência de teste\nnode --test ok (FICTICIO)\n", "rotulos": ["emergencial"], "criado_em": "2026-11-13T19:36:00Z", "integrado_em": "2026-11-13T20:00:00Z", "merge_commit": "a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4",
+   "commits": [{"sha": "b8b8", "data": "2026-11-13T19:35:00Z"}, {"sha": "b9b9", "data": "2026-11-13T19:30:00Z"}],
+   "reviews": [{"autor": "ficticio-b", "estado": "APPROVED", "em": "2026-11-13T19:50:00Z", "corpo": ""}],
+   "comentarios": [
+    {"autor": "ficticio-a", "em": "2026-11-13T19:00:00Z", "corpo": "Aprovação emergencial: o próprio autor (FICTICIO, não vale)"},
+    {"autor": "ficticio-b", "em": "2026-11-13T19:10:00Z", "corpo": "Link da aprovação emergencial: FICTICIO (não é aprovação)"},
+    {"autor": "analisador-FICTICIO[bot]", "em": "2026-11-13T19:20:00Z", "corpo": "Aprovação emergencial: bot não é outra pessoa (FICTICIO)"},
+    {"autor": "ficticio-b", "em": "2026-11-13T19:40:00Z", "corpo": "Aprovação emergencial: ok (FICTICIO, depois do primeiro commit)"}
+   ]},
+  {"numero": 10, "autor": "ficticio-b", "titulo": "Revisão reprovada FICTICIO", "corpo": "Sem demanda ligada (FICTICIO)\n\n## Evidência de teste\n\n[PREENCHER - autores]\n", "rotulos": ["normal"], "criado_em": "2026-11-12T19:35:00Z", "integrado_em": "2026-11-14T00:00:00Z", "merge_commit": "a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5",
+   "commits": [{"sha": "baba", "data": "2026-11-12T19:00:00Z"}],
+   "reviews": [{"autor": "ficticio-a", "estado": "CHANGES_REQUESTED", "em": "2026-11-12T19:40:00Z", "corpo": "Reprovada FICTICIO"}],
+   "comentarios": []}
+ ],
+ "issues": {
+  "1": [],
+  "3": [],
+  "5": [{"autor": "ficticio-a", "em": "2026-11-13T10:50:00Z", "corpo": "Contexto FICTICIO\nAprovação emergencial: pode seguir (FICTICIO)"}],
+  "7": []
+ },
+ "etiquetas": [
+  {"nome": "v0.1.0", "commit": "c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0"},
+  {"nome": "v0.2.0", "commit": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"},
+  {"nome": "v0.3.0", "commit": "d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1"},
+  {"nome": "v0.4.0", "commit": "a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3"},
+  {"nome": "v0.5.0", "commit": "a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4"},
+  {"nome": "rascunho-FICTICIO", "commit": "d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2"}
+ ],
+ "releases": [
+  {"etiqueta": "v0.5.0", "corpo": "## Notas da versão\n\n[PREENCHER - autores]\n", "publicada_em": "2026-11-13T22:50:00Z"},
+  {"etiqueta": "v0.4.0", "corpo": "## Notas da versão\n\nCorreção urgente FICTICIO.\n\n## Registro de liberação\n- Versão: v0.4.0\n- Demanda:\n- Commit: a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3\n- Imagem: sha256:FICTICIO4\n- Liberado por: ficticio-b\n- Liberado em: 2026-11-13T09:50:00-03:00\n- Slot: azul\n- Cópia do banco: copias/antes-v0.4.0.db\n- Resultado da verificação: sem falha\n", "publicada_em": "2026-11-13T12:40:00Z"},
+  {"etiqueta": "v0.3.0", "corpo": "## Notas da versão\n\nAjuste FICTICIO na infraestrutura.\n\n## Registro de liberação\n- Versão: v0.3.0\n- Demanda: #3\n- Commit: d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1\n- Imagem: sha256:FICTICIO3\n- Liberado por: ficticio-a\n- Liberado em: 2026-11-12T15:00:00-03:00\n- Slot: azul\n- Cópia do banco:\n- Resultado da verificação: com falha\n", "publicada_em": "2026-11-12T17:55:00Z"},
+  {"etiqueta": "v0.2.0", "corpo": "## Notas da versão\n\nMural FICTICIO com campo novo.\n\n## Registro de liberação\n- Versão: v0.2.0\n- Demanda: #1\n- Commit: a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1\n- Imagem: sha256:FICTICIO2\n- Liberado por: ficticio-a\n- Liberado em: 2026-11-12T11:00:00-03:00\n- Slot: verde\n- Cópia do banco: copias/antes-v0.2.0.db (3:FICTICIO)\n- Resultado da verificação: sem falha\n", "publicada_em": "2026-11-12T13:50:00Z"}
+ ]
+}

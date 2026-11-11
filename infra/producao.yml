@@ -1,0 +1,42 @@
+# Produção azul/verde: suba só por `node scripts/gco.mjs` (liberar, ativar, reverter).
+# As variáveis SLOT_ATIVO, IMAGEM_AZUL e IMAGEM_VERDE vêm de infra/.slots.env (não versionado).
+name: gco-prod
+
+x-app: &app
+  env_file: producao.env
+  volumes:
+    - dados:/dados
+  mem_limit: 128m
+  restart: unless-stopped
+
+services:
+  app-azul:
+    <<: *app
+    image: ${IMAGEM_AZUL:-exemplo-gco:nenhuma}
+  app-verde:
+    <<: *app
+    image: ${IMAGEM_VERDE:-exemplo-gco:nenhuma}
+  proxy:
+    image: nginx:1.29-alpine
+    ports:
+      - "127.0.0.1:${PORTA_PROD:-8080}:80"
+    configs:
+      - source: nginx
+        target: /etc/nginx/nginx.conf
+    mem_limit: 32m
+    restart: unless-stopped
+
+configs:
+  nginx:
+    content: |
+      worker_processes 1;
+      events {}
+      http {
+        server {
+          listen 80;
+          location / { proxy_pass http://app-${SLOT_ATIVO}:3000; }
+        }
+      }
+
+volumes:
+  dados:

@@ -1,0 +1,19 @@
+ciclo;cenario;tarefa;papel;quem;data;inicio;fim;demanda;pr;versao;resultado;artefato;desvio;dificuldade
+G1;C1;Registrar demanda;Solicitante;ficticio-a;2026-11-12;09:00;09:05;1;;;;issue FICTICIO #1;;
+G1;C1;Classificar mudança;Desenvolvedor(a);ficticio-a;2026-11-12;09:05;09:10;1;;;normal;FICTICIO;;
+G1;C1;Implementar mudança;Desenvolvedor(a);ficticio-a;2026-11-12;09:10;09:40;1;2;;;FICTICIO;;
+G1;C1;Submeter pull request;Desenvolvedor(a);ficticio-a;2026-11-12;09:40;09:45;1;2;;;PR FICTICIO #2;;
+G2;C1;Liberar em produção;Responsável por configuração;ficticio-a;2026-11-12;11:00;11:10;1;2;v0.2.0;;FICTICIO;;
+G2;C5;classificar mudanca;DESENVOLVEDOR(A);ficticio-a;2026-11-12;13:00;13:05;3;4;;Normal;FICTICIO;caixa e acento diferentes de propósito;
+G2;C5;Implementar mudança;Desenvolvedor(a);ficticio-a;2026-11-12;13:05;13:30;3;4;;;FICTICIO;;
+G2;C5;Revisar mudança;Revisor(a);ficticio-a;2026-11-12;13:40;13:50;3;4;;aprovada;FICTICIO;mesma pessoa de propósito;
+G3;C5;Liberar em produção;Responsável por configuração;ficticio-a;2026-11-12;15:00;15:10;3;4;v0.3.0;;FICTICIO;;
+G3;C5;Verificar nova versão;Responsável por configuração;ficticio-a;2026-11-12;15:10;15:15;3;4;v0.3.0;com falha;FICTICIO;;
+G4;C5;Restaurar versão anterior;Responsável por configuração;ficticio-a;2026-11-12;15:15;15:20;3;4;v0.3.0;;FICTICIO;;
+G4;C5;Registrar incidente;Responsável por configuração;ficticio-a;2026-11-12;15:30;15:50;3;4;v0.3.0;;registros/incidentes/2026-11-12-ficticio-falha.md;;FICTICIO
+G1;C4;Aprovar emergência;Aprovador emergencial;ficticio-a;2026-11-13;07:50;07:55;5;6;;aprovada;FICTICIO;;
+;;;;;;;;;;;;;;
+G5;C7;Registrar auditoria;Responsável por configuração;ficticio-a;2026-11-14;09:00;09:30;;;;0;registros/auditorias/2026-11-14.md;;FICTICIO
+G4;C5;Liberar em produção;Responsável por configuração;ficticio-a;2026-11-12;17:00;17:10;3;4;v0.3.0;;FICTICIO;segunda liberação da mesma versão;
+G1;C3;Implementar mudança;Desenvolvedor(a);ficticio-a;12/11/2026 00:00;18:30;18:50;;commit d1d1d1d;;;FICTICIO;commit direto de propósito;
+G1;C3;Submeter pull request;Desenvolvedor(a);ficticio-a;2026-11-12;18:50;18:52;;1,20E+08;;;FICTICIO;hash virou número no Excel;

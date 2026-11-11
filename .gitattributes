@@ -1,0 +1,3 @@
+* text=auto eol=lf
+registros/tarefas-*.csv -text
+registros/scripts-avulsos.csv -text
