@@ -32,6 +32,7 @@ Preenche o(a) Revisor(a), que não pode ser quem fez a mudança. Decisão regist
 
 - [ ] `Demanda: #N` aponta uma issue existente, e o PR faz o que ela pede.
 - [ ] O rótulo de classificação está no PR e segue o critério.
+- [ ] O nome do ramo e as mensagens de commit seguem o procedimento e a orientação de commits (`artefatos/`).
 - [ ] A seção "Evidência de teste" está preenchida, o teste passou e cobre o que mudou.
 - [ ] A forma de reversão está preenchida.
 - [ ] Se `emergencial`: a aprovação é anterior ao primeiro commit e de outro login.

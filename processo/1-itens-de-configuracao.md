@@ -1,5 +1,7 @@
 # 1. Itens de configuração
 
+Seção 2 do Plano de Gerência de Configuração (`artefatos/gco1-plano-de-gerencia-de-configuracao.md`), preenchida para a aplicação de exemplo da simulação.
+
 Quem mantém a lista: Responsável por configuração. Mudou um item (entrou, saiu, mudou de lugar), a lista muda junto. A auditoria confere a lista contra a composição de produção (`processo/8-auditoria-e-restauracao.md`).
 
 | Item | Tipo | Local oficial | Responsável | Nível de controle |
@@ -19,7 +21,7 @@ Quem mantém a lista: Responsável por configuração. Mudou um item (entrou, sa
 | Estado dos slots | estado da implantação | `infra/.slots.env`, na máquina que hospeda os contêineres (fora do repositório) | Responsável por configuração | registro obrigatório |
 | Banco de produção | dados | volume `dados` do projeto `gco-prod` | Responsável por configuração | registro obrigatório |
 | Cópias do banco | cópia de dados | `copias/antes-<versão>.db` (de `liberar`) e `copias/restaurada-<versão>.db` (de `restaurar`), na máquina que hospeda os contêineres (fora do repositório) | Responsável por configuração | registro obrigatório |
-| Documentos e ferramentas do piloto | documentação | `processo/`, `fichas/`, `cenarios.md`, `README.md`, `RELATORIO.md` e `indicadores/`, na `main` | Responsável por configuração | livre |
+| Documentos e ferramentas do piloto | documentação | `artefatos/`, `processo/`, `fichas/`, `cenarios.md`, `README.md`, `EXECUCAO.md`, `ENTREVISTA.md`, `RELATORIO.md` e `indicadores/`, na `main` | Responsável por configuração | livre |
 
 ## Níveis de controle
 

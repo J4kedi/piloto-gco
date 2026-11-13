@@ -1,19 +1,14 @@
-# 4. Versão, notas e registro de liberação
+# 4. Notas da versão e registro de liberação
+
+Notas da versão e registro de liberação são, com a Orientação de commits (`artefatos/gco4-orientacao-de-commits.md`) e a nota de incidente (`processo/6-nota-de-incidente.md`), os registros do resultado GCO 4. Este arquivo diz como eles são gerados na simulação.
 
 ## Número da versão: `vX.Y.Z`
 
-Toda baseline tem etiqueta `vX.Y.Z` no git e Release com o mesmo nome no GitHub. Quem cria: Responsável por configuração, com `gco.mjs baseline`.
-
-| Sobe | Quando | Exemplo |
-|---|---|---|
-| Z (correção) | Correção sem comportamento novo, inclusive emergencial. | `v0.2.0` → `v0.2.1` |
-| Y (menor) | Funcionalidade nova, ou mudança que pede configuração nova para implantar (variável de ambiente, serviço na composição). | `v0.2.1` → `v0.3.0` |
-| X (maior) | Mudança incompatível: rota que some ou muda de formato, banco que a versão anterior não lê. | `v0.9.0` → `v1.0.0` |
-
-- Ao subir um número, os da direita voltam a 0. No piloto, X fica em 0.
-- Correção no código sai sempre com número novo. Correção só em item fora do repositório (por exemplo, `infra/producao.env`) libera de novo a mesma versão.
+Toda baseline tem etiqueta `vX.Y.Z` no git e Release com o mesmo nome no GitHub. Quem cria: Responsável por configuração, com `gco.mjs baseline`. O número segue a seção 3 de `artefatos/gco2-procedimento-de-repositorios-branches-versoes-e-releases.md`. Na simulação, X fica em 0, e o item fora do repositório cuja correção libera de novo a mesma versão é `infra/producao.env`.
 
 ## Criar a baseline
+
+O que compõe a baseline, quando ela é criada e como é controlada: `artefatos/gco3-definicao-de-baseline.md`. Na simulação:
 
 1. `node scripts/gco.mjs homologar` conferido.
 2. Escreva as notas em `registros/notas-vX.Y.Z.md`, pelo modelo abaixo; o commit delas na `main` pode vir antes ou depois da baseline.

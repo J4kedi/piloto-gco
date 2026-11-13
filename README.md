@@ -1,26 +1,57 @@
 # Piloto de gerência de configuração
 
-Piloto de aplicabilidade de um processo de gerência de configuração (resultados GCO 1 a 5 do MPS-SW 2024), executado em simulação sobre uma aplicação de exemplo.
+Kit do piloto de um processo de gerência de configuração (resultados GCO 1 a 5 do MPS-SW 2024). O piloto é executado pelos autores num projeto real de uma empresa de software: uma mudança pequena, que passa pelos cinco artefatos propostos e termina numa auditoria de configuração. Uma simulação com aplicação de exemplo complementa o piloto nos caminhos que não se pode provocar num ambiente real, como emergência e falha na liberação.
 
 Projeto Final I, Engenharia de Software, Grupo 13.
 Autores: [PREENCHER - autores]
 
+**Para executar o piloto, comece por [`EXECUCAO.md`](EXECUCAO.md):** o passo a passo dos autores, em ordem, do termo assinado à entrega.
+
 ## O que é
 
-- Um processo de gerência de configuração escrito em `processo/`, com modelos de issue e de pull request em `.github/`.
-- Uma aplicação de exemplo (mural de recados) com homologação e produção locais, em contêineres.
-- Um script, `scripts/gco.mjs`, que executa homologação, baseline, liberação, reversão e restauração, e grava cada execução em `registros/execucoes.csv`.
-- Sete cenários (`cenarios.md`) executados por dois autores em cinco ciclos de adoção gradual (G1 a G5), com uma ficha por ciclo em `fichas/`.
-- Um script de indicadores, `indicadores/indicadores.py`, que lê os registros e o histórico do GitHub.
+- Cinco artefatos propostos, um por resultado de GCO, em `artefatos/`. São modelos genéricos, para implantar na empresa.
+- O passo a passo do piloto, `EXECUCAO.md`, uma ficha PDSA por resultado de GCO, em `fichas/`, e um roteiro de entrevista de validação, `ENTREVISTA.md`.
+- A simulação: uma aplicação de exemplo (mural de recados) com homologação e produção locais, em contêineres; o script `scripts/gco.mjs`, que executa homologação, baseline, liberação, reversão e restauração e grava cada execução em `registros/execucoes.csv`; sete cenários (`cenarios.md`); as regras de `processo/`, que aplicam os artefatos à aplicação de exemplo; e os modelos de issue e de pull request em `.github/`.
+- Um script de indicadores da simulação, `indicadores/indicadores.py`, que lê os registros e o histórico do GitHub.
+- O relatório do piloto, `RELATORIO.md`, com a avaliação por resultado de GCO.
 
-O repositório traz a ferramenta e os modelos em branco. Registros, tempos e resultados são preenchidos pelos autores durante o piloto.
+O repositório traz os modelos e a ferramenta em branco. Registros, tempos, fichas, resultados e avaliação são preenchidos pelos autores a partir da execução.
 
 ## O que não é
 
-- Não mede efeito do processo em empresa. O piloto verifica se o processo é aplicável, num ambiente simulado.
-- Não contém dado de nenhuma empresa. Aplicação, dados e ambiente são de exemplo.
+- Não contém dado de nenhuma empresa: nome, código, URL, IP, dado de cliente ou nome de pessoa. O que for preenchido com dado da empresa (plano, checklist, notas, registros) fica fora deste repositório, numa pasta privada dos autores. Aqui entram as fichas e o relatório, escritos sem identificação, e só a evidência que o termo de autorização permitir divulgar.
+- Não mede o efeito do processo na empresa. O piloto verifica se os artefatos são aplicáveis num projeto real e o que precisa de ajuste; o efeito é avaliado depois, na implantação nos demais projetos.
+- A simulação não é o piloto. A aplicação, os dados e o ambiente dela são de exemplo.
 
-## Preparo
+## Artefatos propostos, por resultado de GCO
+
+| Resultado | Artefato | Arquivo | Ficha | Simulação (complemento) |
+|---|---|---|---|---|
+| GCO 1, itens e níveis de controle | Plano de Gerência de Configuração | `artefatos/gco1-plano-de-gerencia-de-configuracao.md` | `fichas/GCO1.md` | C6; lista de itens em `processo/1-itens-de-configuracao.md` |
+| GCO 2, sistema de gerência de configuração e mudanças | Procedimento de repositórios, branches, versões e releases | `artefatos/gco2-procedimento-de-repositorios-branches-versoes-e-releases.md` | `fichas/GCO2.md` | C1, C2, C3 e C4; classificação em `processo/2-classificacao.md` |
+| GCO 3, baselines | Definição de baseline | `artefatos/gco3-definicao-de-baseline.md` | `fichas/GCO3.md` | C1 e C5 |
+| GCO 4, registros | Orientação de commits, com as notas da versão e o registro de liberação (`processo/4-versao-e-notas.md`) e a nota de incidente (`processo/6-nota-de-incidente.md`) | `artefatos/gco4-orientacao-de-commits.md` | `fichas/GCO4.md` | C1, C5 e script avulso |
+| GCO 5, auditorias | Checklist de auditoria de configuração | `artefatos/gco5-checklist-de-auditoria-de-configuracao.md` | `fichas/GCO5.md` | C7; roteiro em `processo/8-auditoria-e-restauracao.md` |
+
+Os campos `[PREENCHER]` de `artefatos/` são do modelo: preenche-se a cópia usada no projeto, na pasta privada, e não o arquivo deste repositório.
+
+## Piloto real
+
+O piloto só começa com o termo assinado pela empresa. A mudança é pequena, do Autor A, e não toca regra de negócio nem o fluxo de implantação; o Autor B revisa e audita. O portão de entrada, o calendário, os papéis e a evidência a guardar estão em `EXECUCAO.md`. Em resumo:
+
+| Etapa | Artefato | Resultado |
+|---|---|---|
+| Preencher o plano para o projeto, ou parte dele, em que está a mudança | Plano de Gerência de Configuração | GCO 1 |
+| Conferir o repositório e criar a branch da mudança | Procedimento de repositórios, branches, versões e releases | GCO 2 |
+| Implementar, com os commits no formato da orientação, revisar e integrar | Orientação de commits; Procedimento | GCO 4 e GCO 2 |
+| Criar a baseline depois da homologação | Definição de baseline | GCO 3 |
+| Liberar pela rotina da empresa, verificar e registrar | Procedimento (seção 4); registro de liberação; nota de incidente | GCO 2 e GCO 4 |
+| Auditar a mudança com o checklist | Checklist de auditoria de configuração | GCO 5 |
+| Avaliar por resultado e propor os ajustes | `fichas/`, `RELATORIO.md` | GCO 1 a 5 |
+
+Etapa que não puder ser executada no prazo, como uma liberação fora da janela da empresa, é declarada na ficha e no relatório como não ocorrida.
+
+## Simulação: preparo
 
 O Autor A hospeda os contêineres. Na máquina dele: Docker Desktop, Node 24, Python 3.14, git e gh autenticado (`gh auth status`). O Autor B precisa de conta no GitHub; os comandos `gh` dos roteiros também podem ser feitos pela página do GitHub.
 
@@ -54,18 +85,18 @@ Uma vez, na máquina do Autor A, na raiz do repositório:
    node scripts/gco.mjs registrar v0.1.0 --demanda <n>
    node scripts/gco.mjs situacao
    ```
-   A etiqueta `v0.1.0` é o marco do piloto: só conta o que está em `v0.1.0..main`, e as linhas do log com versão `v0.1.0` ficam fora dos indicadores.
+   A etiqueta `v0.1.0` é o marco da simulação: só conta o que está em `v0.1.0..main`, e as linhas do log com versão `v0.1.0` ficam fora dos indicadores.
 7. Autotestes: `node scripts/gco.mjs autoteste` e `python indicadores/indicadores.py autoteste`.
 
-Durante o piloto:
+Durante a simulação:
 
-- `registros/`, `fichas/`, `processo/`, `cenarios.md`, `README.md`, `RELATORIO.md` e `indicadores/` entram direto na `main`. `app/`, `infra/`, `scripts/` e `.github/` só por PR.
+- `registros/`, `fichas/`, `artefatos/`, `processo/`, `cenarios.md`, `README.md`, `EXECUCAO.md`, `ENTREVISTA.md`, `RELATORIO.md` e `indicadores/` entram direto na `main`. `app/`, `infra/`, `scripts/` e `.github/` só por PR.
 - A baseline etiqueta o commit do último `homologar` ok e recusa se `app/`, `infra/`, `scripts/` ou `.github/` mudaram entre ele e o `HEAD`; commit em `registros/`, `fichas/` e afins não atrapalha.
 - Portas publicadas só em `127.0.0.1`: 8080 (produção) e 8081 (homologação), ajustáveis por `PORTA_PROD` e `PORTA_HOMOLOG`.
 - `liberar` e `restaurar` mostram no terminal um aviso de recurso experimental do `node:sqlite`; é inofensivo.
 - As planilhas `registros/tarefas-autor-a.csv`, `registros/tarefas-autor-b.csv` e `registros/scripts-avulsos.csv` usam `;` e UTF-8 com BOM, formato em que a planilha em português abre e salva.
 
-## Comandos
+## Simulação: comandos
 
 `node scripts/gco.mjs <comando>`, na raiz do repositório, na máquina do Autor A.
 
@@ -82,9 +113,9 @@ Durante o piloto:
 | `situacao` | — | Slot ativo, versão em cada slot e em homologação, login do `gh`, e a comparação entre os serviços da composição de produção e `infra/servicos-da-liberacao.txt`. |
 | `autoteste` | — | Asserts das funções puras. |
 
-## Indicadores
+## Simulação: indicadores
 
-Com as planilhas e `registros/execucoes.csv` em commit na `main`:
+Os indicadores descrevem só a simulação; o piloto real é avaliado nas fichas e no relatório. Com as planilhas e `registros/execucoes.csv` em commit na `main`:
 
 ```
 python indicadores/indicadores.py coletar
@@ -93,7 +124,7 @@ python indicadores/indicadores.py
 
 O primeiro grava `registros/historico.json` (foto do git e do GitHub). O segundo calcula sem rede e grava `registros/indicadores.md`: divergências entre planilha, log e histórico; os nove indicadores com numerador, denominador e fonte; e os apoios para a análise (caminho percorrido × previsto, os cinco elementos por mudança, minutos nas tarefas de controle). Denominador zero sai como "sem ocorrência".
 
-## Mapa: cenário → tarefas → artefato → indicador
+## Simulação: cenário → tarefas → artefato → indicador
 
 | Cenário | Tarefas que o marcam | Artefato | Indicador |
 |---|---|---|---|
@@ -116,18 +147,26 @@ Todos os cenários alimentam o caminho percorrido × previsto e os minutos nas t
 | `infra/` | Composições de homologação e produção, variáveis, lista de serviços da liberação |
 | `scripts/gco.mjs` | Comandos do processo |
 | `.github/` | Modelos de issue (demanda) e de pull request |
-| `processo/` | Regras: itens de configuração, classificação, versão e notas, nota de incidente, script avulso, auditoria e restauração |
-| `cenarios.md` | Caminho previsto e roteiro de cada cenário, papéis e calendário |
-| `fichas/` | Ficha de cada ciclo (G1 a G5) |
+| `artefatos/` | Os cinco artefatos propostos, um por resultado de GCO (modelos genéricos) |
+| `processo/` | Aplicação dos artefatos à simulação: lista de itens (seção 2 do plano), classificação da mudança (seção 8 do plano), notas da versão e registro de liberação, nota de incidente, script avulso, roteiro de auditoria e restauração |
+| `EXECUCAO.md` | Passo a passo do piloto para os autores: portão, calendário, papéis, evidência, indicadores e fechamento |
+| `ENTREVISTA.md` | Roteiro de entrevista de validação, para quem usou o processo na empresa |
+| `cenarios.md` | Simulação: caminho previsto e roteiro de cada cenário, papéis e calendário |
+| `fichas/` | Uma ficha PDSA por resultado de GCO (GCO1 a GCO5) |
 | `registros/` | Planilhas de tarefas, log `execucoes.csv`, notas das versões, incidentes, auditorias, scripts avulsos, indicadores |
 | `indicadores/` | Script dos indicadores e dados fictícios do autoteste |
 | `RELATORIO.md` | Relatório do piloto |
-| Fora do repositório | `infra/producao.env`, `infra/.slots.env` e `copias/`, na máquina do Autor A |
+| Fora do repositório | `infra/producao.env`, `infra/.slots.env` e `copias/`, na máquina do Autor A; a pasta privada dos autores, com tudo o que tem dado da empresa |
 
 ## Limites declarados
+
+- O piloto real é uma mudança pequena num projeto: mostra se os artefatos são aplicáveis e o que ajustar, não o efeito deles na empresa.
+- A evidência do piloto real fica com os autores, fora deste repositório. Aqui está a avaliação que eles fazem dela.
+
+Na simulação:
 
 - `ativar` e `reverter` recriam o proxy: a porta pública fica fora do ar por cerca de 1 s a cada troca de slot.
 - `liberar` confere só a identidade da versão (`/versao`). A saúde (`/saude`) é conferida por `verificar`, depois de `ativar`: uma falha de configuração, como a de C5, chega à porta pública antes de ser percebida.
 - A `main` não tem proteção técnica, de propósito: commit direto é possível (C3), e quem o acusa é a auditoria.
-- Amostra pequena: dois autores, sete cenários, três dias. Os indicadores descrevem este piloto e não se generalizam.
+- Amostra pequena: dois autores e sete cenários. Os indicadores descrevem a simulação e não se generalizam.
 - Homologação e produção rodam na mesma máquina.
