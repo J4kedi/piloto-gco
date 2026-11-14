@@ -19,7 +19,10 @@ Critério mantido. Depois da homologação pela rotina da empresa (sexta, 13/11,
 
 *O que foi feito de fato: data, quem fez (Autor A ou B), tempo gasto, onde está a evidência. Na simulação, os cenários executados e os endereços dos registros.*
 
-[PREENCHER - autores]
+- A baseline depende da integração e da homologação da mudança, que aguardam a revisão (ficha GCO2).
+- 14/11: conferido que nenhuma automação da plataforma é disparada por etiqueta; criar a etiqueta não implanta nada.
+- Próxima versão pela regra: `v1.1.0`, porque desde a última etiqueta entraram funcionalidades novas.
+- Aprovação da baseline pelo comitê de controle de mudanças (direção com o responsável por configuração), criação da etiqueta e notas da versão: [PREENCHER - autores]
 
 ## Estudar
 

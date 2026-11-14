@@ -19,16 +19,29 @@ Critério mantido. Na sexta, 13/11, o Autor A confere o repositório da empresa 
 
 *O que foi feito de fato: data, quem fez (Autor A ou B), tempo gasto, onde está a evidência. Na simulação, os cenários executados e os endereços dos registros.*
 
-[PREENCHER - autores]
+- 13/11, 17h09, Autor A: demanda registrada como issue. Na rotina da equipe as demandas chegam por conversa e não viram issue.
+- 13/11, 17h10, Autor A: branch criada da `main` atualizada, no padrão `<tipo>/<nº da demanda>-<resumo>`.
+- 13/11, 17h15, Autor A, com apoio de IA: conferência do repositório contra a seção 1 do procedimento, sem alterar nada. Confere: repositório privado com `main`; README, `.gitignore`, build e implantação no repositório; segredos de produção fora dele. Não confere: não há modelo de demanda nem de pull request; dois métodos de merge habilitados; branch não é apagada depois da integração (mais de 100 no remoto); a `main` não tem proteção, porque o plano da plataforma não oferece; todos os desenvolvedores administram o repositório. Confere em parte: uma única etiqueta, de julho, sem baseline desde então.
+- 13/11, 17h16, Autor A: pull request aberto com demanda, classificação (normal), itens afetados, risco, evidência de teste, forma de reversão e checklist de revisão. A verificação automática da plataforma passou.
+- 13/11, noite: o revisor da equipe assinou a ciência. O pedido de revisão foi feito por mensagem, sem marcar o revisor no pull request.
+- 14/11, 15h10: a plataforma não registrava nenhuma revisão; a integração aguarda a revisão registrada, que a equipe faz em horário de trabalho.
+- No período, desde a base: 1 pull request de outro desenvolvedor foi integrado à `main`, sem revisão registrada; nenhum commit direto.
+- Integração da mudança do piloto: [PREENCHER - autores]
 
 ## Estudar
 
 *O critério foi atendido? O que não ficou bom: passo que a rotina real não comporta, regra que conflita com o que a equipe já faz, configuração que a plataforma não oferece, tempo gasto.*
 
-[PREENCHER - autores]
+Critério não atendido até 14/11: a branch e o pull request seguiram o procedimento sem passo extra, mas a revisão por outra pessoa não ficou registrada na plataforma dentro da janela do piloto, e por isso não houve integração, versão nem release.
+
+O que não ficou bom:
+- O pedido de revisão foi feito por mensagem; o revisor não foi marcado no pull request, e a revisão não entrou na fila dele na plataforma.
+- A equipe revisa e integra só em horário de trabalho; um piloto de fim de semana não comporta a espera.
+- A plataforma, no plano em uso, não protege a `main`: a regra de revisão vale só por procedimento, e no mesmo período outro pull request foi integrado sem revisão.
+- A configuração do repositório diverge do procedimento em quatro pontos da seção 1 (modelos, método de merge, exclusão de branch, proteção).
 
 ## Agir
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-[PREENCHER - autores]
+`ajustar`. O procedimento passa a exigir que o revisor seja marcado no pull request (pedido de revisão na plataforma, não por mensagem) e a fixar um prazo de revisão, com um revisor substituto quando o prazo vence. A seção 1 ganha os ajustes de configuração que a plataforma permite no plano gratuito: um único método de merge, exclusão automática da branch e modelos de demanda e de pull request. Sem proteção técnica da `main`, a auditoria mensal confere a revisão de todo pull request integrado.

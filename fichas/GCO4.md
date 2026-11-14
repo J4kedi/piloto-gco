@@ -19,16 +19,21 @@ Critério mantido. O Autor A faz os commits da mudança no formato da orientaç�
 
 *O que foi feito de fato: data, quem fez (Autor A ou B), tempo gasto, onde está a evidência. Na simulação, os cenários executados e os endereços dos registros.*
 
-[PREENCHER - autores]
+- 13/11, 17h12 a 17h15, Autor A, com apoio de IA: 4 testes escritos para casos de borda de uma regra já existente (de 23 para 27 testes, todos passando), sem mudar código de produção.
+- 13/11, 17h15, Autor A: 1 commit, com tipo, escopo, resumo no presente e número da demanda, e corpo com o motivo, os itens afetados e o efeito na implantação (nenhum). As verificações automáticas da equipe no commit passaram (formatação, análise estática e formato da mensagem).
+- Indicador do passo 16: 1 commit na mudança; pelo comando do roteiro, que não aceita escopo, 0 de 1 segue a orientação; aceitando escopo, 1 de 1.
+- Registro de liberação: não houve liberação até 14/11 (ficha GCO2).
 
 ## Estudar
 
 *O critério foi atendido? O que não ficou bom: tipo que faltou ou sobrou, regra que conflita com o que a equipe já usa, campo do registro que a liberação real não fornece, tempo gasto.*
 
-[PREENCHER - autores]
+Critério ainda não verificável por inteiro: o commit seguiu a orientação, mas a leitura "entre as duas etiquetas" e o registro de liberação dependem da baseline e da liberação.
+
+O que não ficou bom: a orientação não prevê o escopo (`<tipo>(<escopo>): ...`), que a equipe já usa e que a verificação automática dela aceita. Seguir a orientação à risca obrigaria a equipe a abandonar uma convenção que já funciona, e o indicador do roteiro contou o commit como fora do padrão.
 
 ## Agir
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-[PREENCHER - autores]
+`ajustar`. A orientação de commits passa a aceitar escopo opcional, `<tipo>(<escopo>): <resumo> (#<nº da demanda>)`, compatível com o Conventional Commits e com a verificação que a equipe já tem; o comando do indicador muda junto.
