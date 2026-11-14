@@ -1,1 +1,2 @@
 ﻿ciclo;cenario;tarefa;papel;quem;data;inicio;fim;demanda;pr;versao;resultado;artefato;desvio;dificuldade
+;C3;Implementar mudança;Desenvolvedor(a);J4kedi;2026-11-14;15:22;15:22;;commit 02c36b3;;;commit 02c36b3;commit direto na main, sem demanda nem PR, de propósito;
