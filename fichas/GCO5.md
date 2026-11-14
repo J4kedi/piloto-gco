@@ -19,7 +19,11 @@ Critério mantido. O Autor B, que não fez a mudança, audita no sábado, 14/11,
 
 *O que foi feito de fato: data, quem auditou (Autor A ou B), tempo gasto, onde está o checklist respondido. Na simulação, o endereço do registro em `registros/auditorias/`.*
 
-[PREENCHER - autores]
+- 14/11, 15h27, com apoio de IA: evidência dos 20 itens do checklist levantada só por leitura do repositório e da plataforma da empresa, em duas lentes: desde a última etiqueta, de julho, e a mudança do piloto. Cada item recebeu uma sugestão de resposta. Sugestão: 3 C, 13 NC e 4 NA; conformidade sugerida de 25% no bloco A, 0% no B, 33% no C, 25% no D e 0% no E.
+- O que a evidência mostra: nenhum dos pull requests integrados desde julho tem revisão registrada; 121 commits entraram na `main` sem pull request (nenhum desde setembro); uma única etiqueta e liberações sem etiqueta; nenhum registro de liberação nem de script avulso; 587 branches integradas não removidas.
+- O que não se verificou sem acesso ao servidor: versão e artefato em produção e em homologação, quantidade de liberações, existência das cópias do banco.
+- Teste de restauração na empresa: não autorizado (ninguém assinou a ciência como responsável pela homologação); coberto pela simulação, em C7.
+- Decisão do Autor B, item a item, por chamada, com responsável e prazo de cada NC: [PREENCHER - autores]
 
 ## Estudar
 
