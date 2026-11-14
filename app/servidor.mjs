@@ -1,4 +1,5 @@
 // Aplicação de exemplo do piloto: mural de recados (node:http + node:sqlite).
+// A porta vem de PORTA (padrão 3000); o proxy de produção escolhe o slot ativo.
 import { createServer } from 'node:http';
 import { DatabaseSync } from 'node:sqlite';
 
