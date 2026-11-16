@@ -21,7 +21,7 @@ Critério mantido. Depois da homologação pela rotina da empresa (sexta, 13/11,
 
 - 16/11, 08h41: mudança integrada (ficha GCO2).
 - 16/11, 08h47: o revisor homologou a `main` com a mudança, junto com outras duas integrações do dia, pela ferramenta de implantação da equipe; a homologação passou. É o commit candidato à baseline.
-- 16/11, 09h10 a 09h22, Autor A, na rotina da equipe: nova homologação do mesmo commit, liberação no slot inativo (09h14) e troca do slot público (09h22), as duas sem falha. A liberação e a troca vieram **antes** da aprovação da baseline pelo comitê, pedida à direção por mensagem às 09h; a ordem do procedimento (aprovação e etiqueta antes da liberação) não foi seguida.
+- 16/11, 09h10 a 09h22, Autor A, na rotina da equipe: nova homologação do mesmo commit, liberação no slot inativo (09h14) e troca do slot público (09h22), as duas sem falha. A liberação e a troca vieram **antes** da aprovação da baseline pelo comitê, pedida à direção por mensagem e ainda sem resposta às 09h22; a ordem do procedimento (aprovação e etiqueta antes da liberação) não foi seguida.
 - 14/11: conferido que nenhuma automação da plataforma é disparada por etiqueta; criar a etiqueta não implanta nada.
 - Próxima versão pela regra: `v1.1.0`, porque desde a última etiqueta entraram funcionalidades novas.
 - Aprovação da baseline pelo comitê de controle de mudanças (direção com o responsável por configuração), criação da etiqueta e notas da versão: [PREENCHER - autores]
