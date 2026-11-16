@@ -34,7 +34,7 @@ Critério mantido. Na sexta, 13/11, o Autor A confere o repositório da empresa 
 
 *O critério foi atendido? O que não ficou bom: passo que a rotina real não comporta, regra que conflita com o que a equipe já faz, configuração que a plataforma não oferece, tempo gasto.*
 
-Critério não atendido. A branch e o pull request seguiram o procedimento sem passo extra, e a integração ocorreu no primeiro dia útil, 16/11; mas o pull request foi integrado com zero revisões registradas, como os demais da equipe (ficha GCO5). A versão e a release dependem da baseline (ficha GCO3).
+Ciclo 1: critério não atendido. A branch e o pull request seguiram o procedimento sem passo extra, e a integração ocorreu no primeiro dia útil, 16/11; mas o pull request foi integrado com zero revisões registradas, como os demais da equipe (ficha GCO5). A versão e a release dependem da baseline (ficha GCO3).
 
 Ciclo 2, com o ajuste: critério atendido. Revisão registrada na plataforma, por outra pessoa, com a conta pessoal, antes da integração, e integração pela mesma conta, 9 minutos depois do pedido; só a conferência rápida do corpo do pull request ficou sem marcar.
 
