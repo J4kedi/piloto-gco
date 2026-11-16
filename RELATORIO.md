@@ -23,8 +23,8 @@ Etapas do `EXECUCAO.md`.
 | Preencher o plano | GCO 1 | Plano de Gerência de Configuração | 13/11 | sim; leitura do Autor B pendente em 14/11 | pasta privada; `fichas/GCO1.md` |
 | Conferir o repositório e criar a branch | GCO 2 | Procedimento de repositórios, branches, versões e releases | 13/11 | sim | pasta privada; `fichas/GCO2.md` |
 | Implementar, revisar e integrar | GCO 4 e GCO 2 | Orientação de commits; Procedimento | 13 a 16/11 | implementação, pull request e integração (16/11, 08h41), sim; revisão registrada na plataforma, não | plataforma da empresa; `fichas/GCO2.md` e `fichas/GCO4.md` |
-| Criar a baseline | GCO 3 | Definição de baseline | — | não até 16/11, 08h50: integração feita; aguarda a aprovação do comitê de controle de mudanças | `fichas/GCO3.md` |
-| Liberar, verificar e registrar | GCO 2 e GCO 4 | Procedimento; registro de liberação; nota de incidente | 16/11 | sim, liberação às 09h14 e troca do slot às 09h22, sem falha; antes da aprovação da baseline pelo comitê | `fichas/GCO2.md` |
+| Criar a baseline | GCO 3 | Definição de baseline | 16/11 | sim: aprovada pelo comitê às 09h20 e etiqueta às 09h26, depois de a liberação começar (09h14) | `fichas/GCO3.md` |
+| Liberar, verificar e registrar | GCO 2 e GCO 4 | Procedimento; registro de liberação; nota de incidente | 16/11 | sim: liberação às 09h14 (antes da aprovação), troca do slot às 09h22 (depois), verificação sem falha, registro publicado com as notas | `fichas/GCO2.md` |
 | Auditar com o checklist | GCO 5 | Checklist de auditoria de configuração | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
 
 ### Simulação (complemento)

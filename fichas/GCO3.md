@@ -21,19 +21,26 @@ Critério mantido. Depois da homologação pela rotina da empresa (sexta, 13/11,
 
 - 16/11, 08h41: mudança integrada (ficha GCO2).
 - 16/11, 08h47: o revisor homologou a `main` com a mudança, junto com outras duas integrações do dia, pela ferramenta de implantação da equipe; a homologação passou. É o commit candidato à baseline.
-- 16/11, 09h10 a 09h22, Autor A, na rotina da equipe: nova homologação do mesmo commit, liberação no slot inativo (09h14) e troca do slot público (09h22), as duas sem falha. A liberação e a troca vieram **antes** da aprovação da baseline pelo comitê, pedida à direção por mensagem e ainda sem resposta às 09h22; a ordem do procedimento (aprovação e etiqueta antes da liberação) não foi seguida.
+- 16/11, 09h10 a 09h22, Autor A, na rotina da equipe: nova homologação do mesmo commit, liberação no slot inativo (09h14) e troca do slot público (09h22), as duas sem falha. A liberação no slot inativo veio **antes** da aprovação da baseline; a troca do slot público, depois.
 - 14/11: conferido que nenhuma automação da plataforma é disparada por etiqueta; criar a etiqueta não implanta nada.
 - Próxima versão pela regra: `v1.1.0`, porque desde a última etiqueta entraram funcionalidades novas.
-- Aprovação da baseline pelo comitê de controle de mudanças (direção com o responsável por configuração), criação da etiqueta e notas da versão: [PREENCHER - autores]
+- 16/11, 09h19, Autor A: pedido de aprovação da baseline `v1.1.0` à direção, por mensagem no canal da equipe. 09h20: a direção aprovou; com o Autor A, que é o responsável por configuração, fecha o comitê de controle de mudanças.
+- 16/11, 09h26, Autor A: etiqueta anotada `v1.1.0` no commit homologado e liberado, e release com as notas da versão e o registro de liberação (commit, artefato, homologação, liberação, aprovação, troca do slot, cópia do banco e verificação). A etiqueta não disparou nenhuma automação.
+- Localizar commit, artefato e notas a partir da etiqueta, por quem não fez a baseline (Autor B): [PREENCHER - autores]
 
 ## Estudar
 
 *O critério foi atendido? O que não ficou bom: componente que não deu para identificar, condição que a rotina real não cumpre, momento de criação que não coube na liberação da empresa, tempo gasto.*
 
-[PREENCHER - autores]
+Critério atendido em parte. A baseline reúne todos os componentes da definição e foi criada por quem a definição indica, depois da homologação. A ordem, porém, não foi seguida: a liberação no slot inativo começou 6 minutos antes da aprovação do comitê, e a etiqueta veio 4 minutos depois da troca do slot público.
+
+O que não ficou bom:
+- O hábito da equipe é liberar logo depois de homologar, e nada na ferramenta de liberação lembra da aprovação nem da etiqueta.
+- O comitê não foi o gargalo: respondeu 1 minuto depois do pedido. O atraso veio de pedir a aprovação depois de começar a liberação.
+- A cópia do banco tem nome e data no log da liberação, mas não tem impressão digital registrada.
 
 ## Agir
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-[PREENCHER - autores]
+`ajustar`. A aprovação do comitê e a etiqueta passam a ser a condição de entrada da liberação: quem libera confere a etiqueta aprovada antes de confirmar, e o pedido de aprovação sai junto com o fim da homologação. Como o comitê respondeu em 1 minuto, a regra cabe na rotina; o passo seguinte é a ferramenta de liberação da equipe recusar versão sem etiqueta. A definição passa a pedir a impressão digital da cópia do banco no registro.
