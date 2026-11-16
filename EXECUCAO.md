@@ -48,24 +48,24 @@ O que não ficou bom vai em "Estudar" da mesma ficha, e o ajuste, em "Agir".
 
 ## Sexta, 13/11: preparo e GCO 1 a 4
 
-- [ ] **5. GCO 1: preencher o plano.** O Autor A preenche a cópia do Plano de Gerência de Configuração para o projeto, ou a parte dele, em que está a mudança. O Autor B lê e aponta a seção que ficou vaga. Anotem o início e o fim.
+- [x] **5. GCO 1: preencher o plano.** O Autor A preenche a cópia do Plano de Gerência de Configuração para o projeto, ou a parte dele, em que está a mudança. O Autor B lê e aponta a seção que ficou vaga. Anotem o início e o fim.
 - [x] **6. GCO 2: conferir o repositório.** Comparem o repositório da empresa com a seção 1 do procedimento, sem alterar nada, e anotem o que confere e o que não confere.
 - [x] **7. GCO 2: criar a branch** da mudança, com o nome do procedimento (seção 2).
 - [x] **8. GCO 4: implementar,** com os commits no formato da Orientação de commits.
-- [ ] **9. GCO 2: pull request, revisão e integração.** O pull request leva demanda, classificação, evidência de teste e forma de reversão. O Autor B revisa pela alternativa do passo 1. A integração segue a rotina da empresa.
-- [ ] **10. GCO 3: criar a baseline.** Depois da homologação pela rotina da empresa, escrevam as notas da versão, na pasta privada, e criem a etiqueta `vX.Y.Z` no commit homologado, conforme a Definição de baseline. Antes de criar etiqueta no repositório da empresa, confirmem com a empresa que ela não dispara implantação nem pipeline. Se não puderem criá-la, registrem a baseline na pasta privada, identificada pelo hash do commit homologado, e anotem o motivo na ficha GCO3.
-- [ ] **11. Fichas.** Preencham o "Executar" das fichas GCO1 a GCO4 com o que ocorreu no dia.
-- [ ] **12. Simulação: preparo.** `README.md`, "Simulação: preparo", até a baseline `v0.1.0`.
-- [ ] **13. Simulação: C3 e C1,** pelos roteiros de `cenarios.md`.
+- [x] **9. GCO 2: pull request, revisão e integração.** O pull request leva demanda, classificação, evidência de teste e forma de reversão. O Autor B revisa pela alternativa do passo 1. A integração segue a rotina da empresa.
+- [x] **10. GCO 3: criar a baseline.** Depois da homologação pela rotina da empresa, escrevam as notas da versão, na pasta privada, e criem a etiqueta `vX.Y.Z` no commit homologado, conforme a Definição de baseline. Antes de criar etiqueta no repositório da empresa, confirmem com a empresa que ela não dispara implantação nem pipeline. Se não puderem criá-la, registrem a baseline na pasta privada, identificada pelo hash do commit homologado, e anotem o motivo na ficha GCO3.
+- [x] **11. Fichas.** Preencham o "Executar" das fichas GCO1 a GCO4 com o que ocorreu no dia.
+- [x] **12. Simulação: preparo.** `README.md`, "Simulação: preparo", até a baseline `v0.1.0`.
+- [ ] **13. Simulação: C3 e C1,** pelos roteiros de `cenarios.md`. *Parcial ou não executado em 16/11: , seção 2.*
 
 ## Sábado, 14/11: liberação e auditoria (GCO 5)
 
-- [ ] **14. GCO 2 e GCO 4: liberação.** Pela rotina da empresa, sem passo novo. Verifiquem a versão e preencham o registro de liberação, na pasta privada. Se a verificação falhar, escrevam a nota de incidente. Se a empresa não liberar até sábado, declarem a liberação como não ocorrida e auditem até a baseline.
+- [x] **14. GCO 2 e GCO 4: liberação.** Pela rotina da empresa, sem passo novo. Verifiquem a versão e preencham o registro de liberação, na pasta privada. Se a verificação falhar, escrevam a nota de incidente. Se a empresa não liberar até sábado, declarem a liberação como não ocorrida e auditem até a baseline.
 - [ ] **15. GCO 5: auditoria.** O Autor B responde os vinte itens na cópia do checklist, com o Autor A mostrando as evidências. Item que o termo não permite executar na empresa, como o teste de restauração, fica `NA`, com o motivo; a simulação cobre esse caminho em C7. Cada não conformidade fica com responsável e prazo, na pasta privada.
-- [ ] **16. Indicadores de GC do piloto real.** Ver "Indicadores", abaixo.
-- [ ] **17. Simulação: C4, script avulso e C5,** nesta ordem.
-- [ ] **18. Simulação: C7,** auditoria e restauração, com a tabela do checklist respondida no registro.
-- [ ] **19. Indicadores da simulação.** Com as planilhas e os registros em commit na `main`: `python indicadores/indicadores.py coletar` e `python indicadores/indicadores.py`.
+- [x] **16. Indicadores de GC do piloto real.** Ver "Indicadores", abaixo.
+- [ ] **17. Simulação: C4, script avulso e C5,** nesta ordem. *Parcial ou não executado em 16/11: , seção 2.*
+- [ ] **18. Simulação: C7,** auditoria e restauração, com a tabela do checklist respondida no registro. *Parcial ou não executado em 16/11: , seção 2.*
+- [ ] **19. Indicadores da simulação.** Com as planilhas e os registros em commit na `main`: `python indicadores/indicadores.py coletar` e `python indicadores/indicadores.py`. *Parcial ou não executado em 16/11: , seção 2.*
 - [ ] **20. Fichas.** Preencham o "Executar" da ficha GCO5 e completem o das outras com a liberação e com os cenários da simulação.
 
 ## Domingo, 15/11: avaliação, ajustes e parecer

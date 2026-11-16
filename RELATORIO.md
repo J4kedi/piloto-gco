@@ -5,11 +5,11 @@ Escreva sem nome de empresa, de pessoa ou de cliente, e sem código, URL ou IP. 
 ## 1. Período e quem executou
 
 - Período: 13 a 16/11/2026.
-- Piloto real, projeto e mudança executada, descritos sem identificar a empresa: sistema web de uma empresa de pequeno porte, mantido por uma equipe de poucos desenvolvedores. A mudança acrescentou quatro testes automatizados de casos de borda a uma regra já existente, sem alterar código de produção, regra de negócio nem implantação (classificação normal).
-- Piloto real, quem fez a mudança e quem auditou (Autor A ou Autor B): o Autor A fez a mudança; a revisão cabe a um membro da equipe da empresa, porque o Autor B não tem acesso ao repositório dela; o Autor B audita por chamada.
+- Piloto real, projeto e mudança executada, descritos sem identificar a empresa: sistema web de uma empresa de pequeno porte, mantido por uma equipe de poucos desenvolvedores. Duas mudanças, em dois ciclos: cada uma acrescentou testes automatizados de casos de borda a uma regra já existente (4 e 5 testes), sem alterar código de produção, regra de negócio nem implantação (classificação normal).
+- Piloto real, quem fez a mudança e quem auditou (Autor A ou Autor B): o Autor A fez as mudanças; a revisão foi de um membro da equipe da empresa, porque o Autor B não tem acesso ao repositório dela; a direção aprovou as baselines, como parte do comitê de controle de mudanças; o Autor B audita a partir da evidência levantada pelo Autor A.
 - Autorização da empresa (data do termo e o que ele permite divulgar): termo recebido assinado em 13/11/2026. Permite citar a empresa e o produto no trabalho acadêmico e divulgar a equipe por função, os indicadores do processo de mudança e o processo modelado, sem código-fonte, credenciais, dados de clientes ou nomes de pessoas; autoriza aplicar os artefatos, em caráter de piloto, a mudanças do estudante que integra a equipe, sem alterar regra de negócio, fluxo de implantação ou produção. O revisor da equipe assinou a ciência.
-- Simulação, Autor A (Desenvolvedor(a) e Responsável por configuração): [PREENCHER - autores]
-- Simulação, Autor B (Solicitante, Revisor(a) e Aprovador emergencial; conferências da auditoria): [PREENCHER - autores]
+- Simulação, Autor A (Desenvolvedor(a) e Responsável por configuração): preparo (versão v0.1.0 no ar) e cenário C3, em 14/11, com apoio de IA.
+- Simulação, Autor B (Solicitante, Revisor(a) e Aprovador emergencial; conferências da auditoria): os passos dele não foram executados (seção 2).
 - Repositório: este repositório, público, com o kit, as fichas e este relatório; a evidência com dado da empresa fica na pasta privada dos autores.
 
 ## 2. O que foi executado e o que não ocorreu
@@ -31,16 +31,16 @@ Etapas do `EXECUCAO.md`.
 
 | Cenário | Complementa | Data | Executado? | Observação |
 |---|---|---|---|---|
-| C1 Mudança normal | GCO 2, 3 e 4 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| C2 Revisão reprovada | GCO 2 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| C3 Commit direto | GCO 2 e 5 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| C4 Mudança emergencial | GCO 2 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| C5 Falha na liberação | GCO 3 e 4 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| C6 Serviço fora da lista | GCO 1 e 5 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| C7 Auditoria e restauração | GCO 5 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| Script avulso | GCO 4 | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
+| C1 Mudança normal | GCO 2, 3 e 4 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
+| C2 Revisão reprovada | GCO 2 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
+| C3 Commit direto | GCO 2 e 5 | 14/11 | sim | commit direto na `main` feito de propósito pelo Autor A, sem aviso ao Autor B; a detecção caberia à auditoria do C7, que não foi executada |
+| C4 Mudança emergencial | GCO 2 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
+| C5 Falha na liberação | GCO 3 e 4 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
+| C6 Serviço fora da lista | GCO 1 e 5 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
+| C7 Auditoria e restauração | GCO 5 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
+| Script avulso | GCO 4 | — | não | ficou para a implantação no Projeto Final II (abaixo) |
 
-O que não ocorreu, no piloto real e na simulação, e por quê: [PREENCHER - autores]
+O que não ocorreu, no piloto real e na simulação, e por quê: no piloto real não houve mudança emergencial, falha de liberação, reversão nem script avulso, e o teste de restauração não foi autorizado no ambiente da empresa. Da simulação, só o preparo e o C3 foram executados: os autores priorizaram aplicar os cinco artefatos a mudanças reais, em dois ciclos, com baselines e liberações em produção, e o tempo da entrega não comportou os demais cenários, que dependem do Autor B na plataforma. Esses caminhos ficam para a implantação no Projeto Final II.
 
 ## 3. Critérios
 
@@ -48,22 +48,22 @@ Situação: atendido, não atendido ou sem ocorrência. O critério de sucesso d
 
 | Critério da simulação | Situação | Evidência |
 |---|---|---|
-| Cada cenário percorre o caminho previsto | [PREENCHER - autores] | [PREENCHER - autores] |
-| Cada mudança tem solicitação, decisão, alteração identificada, evidência de teste e referência de liberação | [PREENCHER - autores] | [PREENCHER - autores] |
-| A auditoria detecta os desvios de C3 e C6 | [PREENCHER - autores] | [PREENCHER - autores] |
-| A restauração termina com os dados conferidos | [PREENCHER - autores] | [PREENCHER - autores] |
+| Cada cenário percorre o caminho previsto | sem ocorrência | só o C3 foi executado (seção 2) |
+| Cada mudança tem solicitação, decisão, alteração identificada, evidência de teste e referência de liberação | sem ocorrência na simulação; no piloto real, atendido nos dois ciclos, exceto a revisão registrada no ciclo 1 | demandas, pull requests e releases na plataforma da empresa (pasta privada); `fichas/GCO2.md` a `GCO4.md` |
+| A auditoria detecta os desvios de C3 e C6 | sem ocorrência | C6 e C7 não executados |
+| A restauração termina com os dados conferidos | sem ocorrência | teste não autorizado na empresa; C7 não executado |
 
 ## 4. Indicadores da simulação
 
 Fonte: `registros/indicadores.md`, gerado por `python indicadores/indicadores.py` a partir de `registros/` e da coleta `python indicadores/indicadores.py coletar`.
 
-- Data da coleta: [PREENCHER - autores]
-- Divergências entre planilha, log e histórico: [PREENCHER - autores]
-- Leitura dos indicadores: [PREENCHER - autores]
-- Adesão: [PREENCHER - autores]
-- Dificuldades: [PREENCHER - autores]
-- Exceções: [PREENCHER - autores]
-- Tempo gasto nas tarefas de controle: [PREENCHER - autores]
+- Data da coleta: não se aplica: a simulação não chegou aos cenários com registro (seção 2); os indicadores do piloto real estão na seção 5.
+- Divergências entre planilha, log e histórico: não se aplica: a simulação não chegou aos cenários com registro (seção 2); os indicadores do piloto real estão na seção 5.
+- Leitura dos indicadores: não se aplica: a simulação não chegou aos cenários com registro (seção 2); os indicadores do piloto real estão na seção 5.
+- Adesão: não se aplica: a simulação não chegou aos cenários com registro (seção 2); os indicadores do piloto real estão na seção 5.
+- Dificuldades: não se aplica: a simulação não chegou aos cenários com registro (seção 2); os indicadores do piloto real estão na seção 5.
+- Exceções: não se aplica: a simulação não chegou aos cenários com registro (seção 2); os indicadores do piloto real estão na seção 5.
+- Tempo gasto nas tarefas de controle, no piloto real: do pedido de revisão à integração, 9 min no ciclo 2; aprovação do comitê, 1 min no ciclo 1 e 5 min no ciclo 2; etiqueta, notas da versão e registro de liberação, cerca de 6 min por versão, com apoio de IA.
 
 ## 5. Avaliação dos resultados do piloto
 
@@ -72,14 +72,14 @@ Uma linha por resultado de GCO, a partir das fichas. O ajuste é o que muda na n
 | Resultado e artefato | O que foi proposto | O que foi usado | O que não funcionou | Ajuste |
 |---|---|---|---|---|
 | GCO 1: Plano de Gerência de Configuração | plano com itens, níveis, funções, acessos, baselines, mudança, liberação e auditoria | rascunho a partir do repositório e respostas da equipe num formulário; 12 itens, 6 funções | 18 campos só a equipe sabia; o plano expôs acesso total de todos os desenvolvedores e ausência de cópia e de registro de demandas | questionário fechado junto do modelo e seção de achados |
-| GCO 2: Procedimento de repositórios, branches, versões e releases | branch por demanda, pull request com revisão de outra pessoa, versão e release | demanda em issue, branch no padrão, pull request completo, verificação automática | revisão não registrada na janela do piloto; pedido feito por mensagem; repositório diverge em quatro pontos da seção 1 | revisor marcado na plataforma, prazo e substituto; ajustes de configuração possíveis no plano gratuito |
-| GCO 3: Definição de baseline | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
-| GCO 4: Orientação de commits | `<tipo>: <resumo> (#n)`, corpo em mudança de risco | 1 commit com tipo, escopo, resumo e demanda; verificações da equipe passaram | a orientação não prevê o escopo que a equipe já usa | aceitar escopo opcional |
+| GCO 2: Procedimento de repositórios, branches, versões e releases | branch por demanda, pull request com revisão de outra pessoa, versão e release | demanda em issue, branch no padrão, pull request completo, verificação automática | ciclo 1: revisão por mensagem e integração por outra conta, sem revisão registrada; repositório diverge em quatro pontos da seção 1. Ciclo 2, com o ajuste: revisão registrada antes da integração | revisor marcado na plataforma, prazo e substituto, cada pessoa com a própria conta; ajustes de configuração possíveis no plano gratuito |
+| GCO 3: Definição de baseline | baseline depois da homologação, aprovada pelo comitê, com etiqueta e notas, antes da liberação | baselines v1.1.0 e v1.1.1 com commit, artefato, notas, registro de liberação e cópia do banco | ciclo 1: liberação antes da aprovação; ciclo 2: etiqueta 4 min antes da mensagem de aprovação | etiqueta aprovada como condição para liberar, criada só com a aprovação à vista; impressão digital da cópia do banco |
+| GCO 4: Orientação de commits | `<tipo>: <resumo> (#n)`, corpo em mudança de risco | 2 commits com tipo, escopo, resumo e demanda; notas da versão e registro de liberação nas duas releases | a orientação não prevê o escopo que a equipe já usa; o registro não tinha a impressão digital da cópia do banco | aceitar escopo opcional; impressão digital no registro |
 | GCO 5: Checklist de auditoria de configuração | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] | [PREENCHER - autores] |
 
-Ajustes que não cabem num só resultado (fluxo, funções, ferramenta): [PREENCHER - autores]
+Ajustes que não cabem num só resultado (fluxo, funções, ferramenta): a aprovação do comitê e a etiqueta passam a ser condição de entrada da ferramenta de liberação da equipe; cada pessoa usa a própria conta na plataforma; o repositório ganha um único método de merge, exclusão automática de branch e modelos de issue e de pull request.
 
-Indicadores de GC do piloto real (contagem do checklist por bloco e do histórico; `EXECUCAO.md`, "Indicadores"): no histórico, desde a base, 1 commit na mudança, que segue a orientação com escopo (0 de 1 pelo comando sem escopo); nenhum commit direto na `main`; 1 pull request de outro desenvolvedor integrado sem revisão registrada. Contagem do checklist por bloco: [PREENCHER - autores]
+Indicadores de GC do piloto real (contagem do checklist por bloco e do histórico; `EXECUCAO.md`, "Indicadores"): no histórico, desde a base até 16/11 às 10h, 2 commits nas mudanças do piloto, os 2 no formato com escopo (0 de 2 pelo comando sem escopo); nenhum commit direto na `main`; dos 5 pull requests integrados, 1 com revisão registrada (o do ciclo 2); 2 baselines aprovadas pelo comitê; 2 liberações das baselines sem falha e nenhuma reversão em 61 execuções da ferramenta de implantação. Contagem do checklist por bloco: [PREENCHER - autores]
 
 Entrevistas de validação feitas (data e função de quem respondeu; `ENTREVISTA.md`): [PREENCHER - autores]
 
@@ -87,8 +87,8 @@ Entrevistas de validação feitas (data e função de quem respondeu; `ENTREVIST
 
 Limites declarados do kit: ver `README.md`, "Limites declarados".
 
-Limites observados na execução: a janela do piloto caiu num fim de semana, e a equipe revisa e integra só em horário de trabalho; uma única mudança, só de teste, não percorre emergência nem falha de liberação; o Autor B não tem acesso ao repositório da empresa e depende de chamada; o rascunho do plano, os testes da mudança e a conferência do repositório foram feitos com apoio de IA e revisados pelo Autor A.
+Limites observados na execução: a janela do piloto caiu num fim de semana, e a equipe revisa e integra só em horário de trabalho; as duas mudanças, só de teste, não percorrem emergência nem falha de liberação; a simulação parou no C3; o Autor B não tem acesso ao repositório da empresa e audita a partir da evidência levantada pelo Autor A; o rascunho do plano, os testes das mudanças, a conferência do repositório, o levantamento da auditoria e as notas da versão foram feitos com apoio de IA e revisados pelos autores.
 
 ## 7. Parecer do avaliador externo
 
-[PREENCHER - autores]
+Não se aplica: o termo foi assinado e o piloto ocorreu na empresa; o parecer externo só valia se a empresa não aceitasse o piloto (documento, Seção 4.6). A avaliação vem do parecer da empresa, resumido no documento, e da entrevista com o revisor.

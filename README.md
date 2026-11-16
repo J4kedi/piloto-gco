@@ -3,7 +3,7 @@
 Kit do piloto de um processo de gerência de configuração (resultados GCO 1 a 5 do MPS-SW 2024). O piloto é executado pelos autores num projeto real de uma empresa de software: uma mudança pequena, que passa pelos cinco artefatos propostos e termina numa auditoria de configuração. Uma simulação com aplicação de exemplo complementa o piloto nos caminhos que não se pode provocar num ambiente real, como emergência e falha na liberação.
 
 Projeto Final I, Engenharia de Software, Grupo 13.
-Autores: [PREENCHER - autores]
+Autores: Grupo 13, Projeto Final I, Engenharia de Software, PUCPR, 2026/2 (Autor A e Autor B).
 
 **Para executar o piloto, comece por [`EXECUCAO.md`](EXECUCAO.md):** o passo a passo dos autores, em ordem, do termo assinado à entrega.
 
