@@ -26,7 +26,7 @@ Critério mantido. Depois da homologação pela rotina da empresa (sexta, 13/11,
 - Próxima versão pela regra: `v1.1.0`, porque desde a última etiqueta entraram funcionalidades novas.
 - 16/11, 09h19, Autor A: pedido de aprovação da baseline `v1.1.0` à direção, por mensagem no canal da equipe. 09h20: a direção aprovou; com o Autor A, que é o responsável por configuração, fecha o comitê de controle de mudanças.
 - 16/11, 09h26, Autor A: etiqueta anotada `v1.1.0` no commit homologado e liberado, e release com as notas da versão e o registro de liberação (commit, artefato, homologação, liberação, aprovação, troca do slot, cópia do banco e verificação). A etiqueta não disparou nenhuma automação.
-- Ciclo 2, com o ajuste do Agir, 16/11: 09h34, Autor A, homologação do commit com a segunda mudança, sem falha; 09h37, pedido de aprovação à direção; 09h38, etiqueta `v1.1.1` e notas da versão, criadas com apoio de IA a partir do relato de que a direção já tinha aprovado; 09h42, a direção aprovou. A etiqueta veio 4 minutos antes da aprovação. Liberação: [PREENCHER - autores]
+- Ciclo 2, com o ajuste do Agir, 16/11: 09h34, Autor A, homologação do commit com a segunda mudança, sem falha; 09h37, pedido de aprovação à direção; 09h38, etiqueta `v1.1.1` e notas da versão, criadas com apoio de IA a partir do relato de que a direção já tinha aprovado; 09h42, a direção aprovou. A etiqueta veio 4 minutos antes da aprovação. 09h47, Autor A: liberação no slot inativo; 09h54, troca do slot público, as duas sem falha e depois da aprovação e da etiqueta.
 - Localizar commit, artefato e notas a partir da etiqueta, por quem não fez a baseline (Autor B): [PREENCHER - autores]
 
 ## Estudar
@@ -35,8 +35,10 @@ Critério mantido. Depois da homologação pela rotina da empresa (sexta, 13/11,
 
 Critério atendido em parte. A baseline reúne todos os componentes da definição e foi criada por quem a definição indica, depois da homologação. A ordem, porém, não foi seguida: a liberação no slot inativo começou 6 minutos antes da aprovação do comitê, e a etiqueta veio 4 minutos depois da troca do slot público.
 
+Ciclo 2, com o ajuste: critério atendido na parte principal. Aprovação e etiqueta vieram antes da liberação, e a liberação só começou 5 minutos depois do ok do comitê. Ficou um desvio menor: a etiqueta foi criada a partir do relato de que a direção tinha aprovado, 4 minutos antes da mensagem de aprovação.
+
 O que não ficou bom:
-- O hábito da equipe é liberar logo depois de homologar, e nada na ferramenta de liberação lembra da aprovação nem da etiqueta.
+- Ciclo 1: o hábito da equipe é liberar logo depois de homologar, e nada na ferramenta de liberação lembra da aprovação nem da etiqueta.
 - O comitê não foi o gargalo: respondeu 1 minuto depois do pedido. O atraso veio de pedir a aprovação depois de começar a liberação.
 - A cópia do banco tem nome e data no log da liberação, mas não tem impressão digital registrada.
 
@@ -44,4 +46,4 @@ O que não ficou bom:
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-`ajustar`. A aprovação do comitê e a etiqueta passam a ser a condição de entrada da liberação: quem libera confere a etiqueta aprovada antes de confirmar, e o pedido de aprovação sai junto com o fim da homologação. Como o comitê respondeu em 1 minuto, a regra cabe na rotina; o passo seguinte é a ferramenta de liberação da equipe recusar versão sem etiqueta. A definição passa a pedir a impressão digital da cópia do banco no registro.
+`ajustar`. A aprovação do comitê e a etiqueta passam a ser a condição de entrada da liberação: quem libera confere a etiqueta aprovada antes de confirmar, e o pedido de aprovação sai junto com o fim da homologação. Como o comitê respondeu em 1 minuto, a regra cabe na rotina; o passo seguinte é a ferramenta de liberação da equipe recusar versão sem etiqueta. A definição passa a pedir a impressão digital da cópia do banco no registro. Do ciclo 2: quem cria a etiqueta só cria com a mensagem de aprovação e a hora dela à vista, e não pelo relato de outra pessoa.

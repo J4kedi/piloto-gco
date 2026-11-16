@@ -23,6 +23,7 @@ Critério mantido. O Autor A faz os commits da mudança no formato da orientaç�
 - 13/11, 17h15, Autor A: 1 commit, com tipo, escopo, resumo no presente e número da demanda, e corpo com o motivo, os itens afetados e o efeito na implantação (nenhum). As verificações automáticas da equipe no commit passaram (formatação, análise estática e formato da mensagem).
 - Indicador do passo 16: 1 commit na mudança; pelo comando do roteiro, que não aceita escopo, 0 de 1 segue a orientação; aceitando escopo, 1 de 1.
 - Registro de liberação: 16/11, liberação às 09h14 e troca do slot público às 09h22, pelo Autor A, do commit homologado com a mudança; registro preenchido na pasta privada com commit, artefato, slot e horário. cópia do banco antes da liberação, com nome e data; smoke de saúde e de websocket sem falha. As notas da versão e o registro de liberação foram publicados na release da etiqueta, às 09h26.
+- Ciclo 2, 16/11: commit da segunda mudança no mesmo formato (tipo, escopo, resumo e demanda), com corpo; liberação às 09h47 e troca do slot às 09h54, registradas nas notas da release `v1.1.1`.
 
 ## Estudar
 
