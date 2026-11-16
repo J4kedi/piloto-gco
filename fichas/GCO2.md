@@ -25,7 +25,7 @@ Critério mantido. Na sexta, 13/11, o Autor A confere o repositório da empresa 
 - 13/11, 17h16, Autor A: pull request aberto com demanda, classificação (normal), itens afetados, risco, evidência de teste, forma de reversão e checklist de revisão. A verificação automática da plataforma passou.
 - 13/11, noite: o revisor da equipe assinou a ciência. O pedido de revisão foi feito por mensagem, sem marcar o revisor no pull request.
 - 14/11, 15h10: a plataforma não registrava nenhuma revisão; a integração aguarda a revisão registrada, que a equipe faz em horário de trabalho.
-- Ciclo 2, com o ajuste do Agir abaixo: 16/11, 09h09, Autor A, demanda registrada como issue; 09h10, branch no padrão, 1 commit só de teste (5 testes, com apoio de IA) e pull request com o revisor marcado na plataforma, na conta pessoal dele, com prazo (16/11, 18h) e substituto. Revisão e integração: [PREENCHER - autores]
+- Ciclo 2, com o ajuste do Agir abaixo: 16/11, 09h09, Autor A, demanda registrada como issue; 09h10, branch no padrão, 1 commit só de teste (5 testes, com apoio de IA) e pull request com o revisor marcado na plataforma, na conta pessoal dele, com prazo (16/11, 18h) e substituto. 09h19, revisor: revisão registrada no pull request (Approve), com a conta pessoal, 8 minutos depois do pedido; a verificação automática passou às 09h19; 09h20, o revisor integrou com a mesma conta, por merge commit. A conferência rápida do corpo do pull request não foi marcada. 09h33, Autor A: branch apagada; a demanda fica aberta até a liberação.
 - No período, desde a base: 1 pull request de outro desenvolvedor foi integrado à `main`, sem revisão registrada; nenhum commit direto.
 - 16/11, 08h41: pull request integrado à `main` por merge commit, pelo próprio revisor, com uma conta administrativa da organização que ele usa, e não com a conta pessoal dele. O revisor revisou fora da plataforma (relato do Autor A); a plataforma não registra revisão nem pedido de revisão no pull request (conferido às 08h48). A demanda continua aberta.
 - 16/11, 08h50, Autor A: branch da mudança apagada do remoto depois da integração, como manda o procedimento, porque a exclusão automática está desligada.
@@ -36,8 +36,10 @@ Critério mantido. Na sexta, 13/11, o Autor A confere o repositório da empresa 
 
 Critério não atendido. A branch e o pull request seguiram o procedimento sem passo extra, e a integração ocorreu no primeiro dia útil, 16/11; mas o pull request foi integrado com zero revisões registradas, como os demais da equipe (ficha GCO5). A versão e a release dependem da baseline (ficha GCO3).
 
+Ciclo 2, com o ajuste: critério atendido. Revisão registrada na plataforma, por outra pessoa, com a conta pessoal, antes da integração, e integração pela mesma conta, 9 minutos depois do pedido; só a conferência rápida do corpo do pull request ficou sem marcar.
+
 O que não ficou bom:
-- O pedido de revisão foi feito por mensagem; o revisor não foi marcado no pull request, e a revisão não entrou na fila dele na plataforma.
+- Ciclo 1: o pedido de revisão foi feito por mensagem; o revisor não foi marcado no pull request, e a revisão não entrou na fila dele na plataforma.
 - A equipe revisa e integra só em horário de trabalho; um piloto de fim de semana não comporta a espera.
 - A plataforma, no plano em uso, não protege a `main`: a regra de revisão vale só por procedimento, e no mesmo período outro pull request foi integrado sem revisão.
 - A configuração do repositório diverge do procedimento em quatro pontos da seção 1 (modelos, método de merge, exclusão de branch, proteção).
@@ -47,4 +49,4 @@ O que não ficou bom:
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-`ajustar`. O procedimento passa a exigir que cada pessoa revise e integre com a própria conta, que o revisor seja marcado no pull request (pedido de revisão na plataforma, não por mensagem) e a fixar um prazo de revisão, com um revisor substituto quando o prazo vence. A seção 1 ganha os ajustes de configuração que a plataforma permite no plano gratuito: um único método de merge, exclusão automática da branch e modelos de demanda e de pull request. Sem proteção técnica da `main`, quem integra confere antes a revisão registrada (Approve) de quem não fez a mudança, e a auditoria mensal confere a revisão de todo pull request integrado.
+`ajustar`, com o ajuste já verificado no ciclo 2. O procedimento passa a exigir que cada pessoa revise e integre com a própria conta, que o revisor seja marcado no pull request (pedido de revisão na plataforma, não por mensagem) e a fixar um prazo de revisão, com um revisor substituto quando o prazo vence. A seção 1 ganha os ajustes de configuração que a plataforma permite no plano gratuito: um único método de merge, exclusão automática da branch e modelos de demanda e de pull request. Sem proteção técnica da `main`, quem integra confere antes a revisão registrada (Approve) de quem não fez a mudança, e a auditoria mensal confere a revisão de todo pull request integrado. A conferência rápida sai do corpo do pull request e vira o texto sugerido do comentário da revisão, porque no ciclo 2 o revisor aprovou sem marcá-la.
