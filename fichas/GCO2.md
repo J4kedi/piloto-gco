@@ -25,6 +25,7 @@ Critério mantido. Na sexta, 13/11, o Autor A confere o repositório da empresa 
 - 13/11, 17h16, Autor A: pull request aberto com demanda, classificação (normal), itens afetados, risco, evidência de teste, forma de reversão e checklist de revisão. A verificação automática da plataforma passou.
 - 13/11, noite: o revisor da equipe assinou a ciência. O pedido de revisão foi feito por mensagem, sem marcar o revisor no pull request.
 - 14/11, 15h10: a plataforma não registrava nenhuma revisão; a integração aguarda a revisão registrada, que a equipe faz em horário de trabalho.
+- Ciclo 2, com o ajuste do Agir abaixo: 16/11, 09h09, Autor A, demanda registrada como issue; 09h10, branch no padrão, 1 commit só de teste (5 testes, com apoio de IA) e pull request com o revisor marcado na plataforma, na conta pessoal dele, com prazo (16/11, 18h) e substituto. Revisão e integração: [PREENCHER - autores]
 - No período, desde a base: 1 pull request de outro desenvolvedor foi integrado à `main`, sem revisão registrada; nenhum commit direto.
 - 16/11, 08h41: pull request integrado à `main` por merge commit, pelo próprio revisor, com uma conta administrativa da organização que ele usa, e não com a conta pessoal dele. O revisor revisou fora da plataforma (relato do Autor A); a plataforma não registra revisão nem pedido de revisão no pull request (conferido às 08h48). A demanda continua aberta.
 - 16/11, 08h50, Autor A: branch da mudança apagada do remoto depois da integração, como manda o procedimento, porque a exclusão automática está desligada.
