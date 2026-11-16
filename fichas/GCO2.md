@@ -26,22 +26,24 @@ Critério mantido. Na sexta, 13/11, o Autor A confere o repositório da empresa 
 - 13/11, noite: o revisor da equipe assinou a ciência. O pedido de revisão foi feito por mensagem, sem marcar o revisor no pull request.
 - 14/11, 15h10: a plataforma não registrava nenhuma revisão; a integração aguarda a revisão registrada, que a equipe faz em horário de trabalho.
 - No período, desde a base: 1 pull request de outro desenvolvedor foi integrado à `main`, sem revisão registrada; nenhum commit direto.
-- Integração da mudança do piloto: [PREENCHER - autores]
+- 16/11, 08h41: pull request integrado à `main` por merge commit, pela conta administrativa da organização, não pela do revisor. O Autor A relata que o revisor revisou a mudança; a plataforma não registra revisão nem pedido de revisão no pull request (conferido às 08h48). A demanda continua aberta.
+- 16/11, 08h50, Autor A: branch da mudança apagada do remoto depois da integração, como manda o procedimento, porque a exclusão automática está desligada.
 
 ## Estudar
 
 *O critério foi atendido? O que não ficou bom: passo que a rotina real não comporta, regra que conflita com o que a equipe já faz, configuração que a plataforma não oferece, tempo gasto.*
 
-Critério não atendido até 14/11: a branch e o pull request seguiram o procedimento sem passo extra, mas a revisão por outra pessoa não ficou registrada na plataforma dentro da janela do piloto, e por isso não houve integração, versão nem release.
+Critério não atendido. A branch e o pull request seguiram o procedimento sem passo extra, e a integração ocorreu no primeiro dia útil, 16/11; mas o pull request foi integrado com zero revisões registradas, como os demais da equipe (ficha GCO5). A versão e a release dependem da baseline (ficha GCO3).
 
 O que não ficou bom:
 - O pedido de revisão foi feito por mensagem; o revisor não foi marcado no pull request, e a revisão não entrou na fila dele na plataforma.
 - A equipe revisa e integra só em horário de trabalho; um piloto de fim de semana não comporta a espera.
 - A plataforma, no plano em uso, não protege a `main`: a regra de revisão vale só por procedimento, e no mesmo período outro pull request foi integrado sem revisão.
 - A configuração do repositório diverge do procedimento em quatro pontos da seção 1 (modelos, método de merge, exclusão de branch, proteção).
+- A integração foi feita por uma conta administrativa da organização, sem revisão registrada: pela plataforma não dá para saber quem revisou nem se a revisão veio antes da integração.
 
 ## Agir
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-`ajustar`. O procedimento passa a exigir que o revisor seja marcado no pull request (pedido de revisão na plataforma, não por mensagem) e a fixar um prazo de revisão, com um revisor substituto quando o prazo vence. A seção 1 ganha os ajustes de configuração que a plataforma permite no plano gratuito: um único método de merge, exclusão automática da branch e modelos de demanda e de pull request. Sem proteção técnica da `main`, a auditoria mensal confere a revisão de todo pull request integrado.
+`ajustar`. O procedimento passa a exigir que o revisor seja marcado no pull request (pedido de revisão na plataforma, não por mensagem) e a fixar um prazo de revisão, com um revisor substituto quando o prazo vence. A seção 1 ganha os ajustes de configuração que a plataforma permite no plano gratuito: um único método de merge, exclusão automática da branch e modelos de demanda e de pull request. Sem proteção técnica da `main`, quem integra confere antes a revisão registrada (Approve) de quem não fez a mudança, e a auditoria mensal confere a revisão de todo pull request integrado.
