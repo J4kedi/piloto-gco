@@ -22,7 +22,7 @@ Critério mantido. O Autor A faz os commits da mudança no formato da orientaç�
 - 13/11, 17h12 a 17h15, Autor A, com apoio de IA: 4 testes escritos para casos de borda de uma regra já existente (de 23 para 27 testes, todos passando), sem mudar código de produção.
 - 13/11, 17h15, Autor A: 1 commit, com tipo, escopo, resumo no presente e número da demanda, e corpo com o motivo, os itens afetados e o efeito na implantação (nenhum). As verificações automáticas da equipe no commit passaram (formatação, análise estática e formato da mensagem).
 - Indicador do passo 16: 1 commit na mudança; pelo comando do roteiro, que não aceita escopo, 0 de 1 segue a orientação; aceitando escopo, 1 de 1.
-- Registro de liberação: não houve liberação até 14/11 (ficha GCO2).
+- Registro de liberação: 16/11, liberação às 09h14 e troca do slot público às 09h22, pelo Autor A, do commit homologado com a mudança; registro preenchido na pasta privada com commit, artefato, slot e horário. Cópia do banco e resultado da verificação: [PREENCHER - autores]
 
 ## Estudar
 
