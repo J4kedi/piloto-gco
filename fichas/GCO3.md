@@ -26,6 +26,7 @@ Critério mantido. Depois da homologação pela rotina da empresa (sexta, 13/11,
 - Próxima versão pela regra: `v1.1.0`, porque desde a última etiqueta entraram funcionalidades novas.
 - 16/11, 09h19, Autor A: pedido de aprovação da baseline `v1.1.0` à direção, por mensagem no canal da equipe. 09h20: a direção aprovou; com o Autor A, que é o responsável por configuração, fecha o comitê de controle de mudanças.
 - 16/11, 09h26, Autor A: etiqueta anotada `v1.1.0` no commit homologado e liberado, e release com as notas da versão e o registro de liberação (commit, artefato, homologação, liberação, aprovação, troca do slot, cópia do banco e verificação). A etiqueta não disparou nenhuma automação.
+- Ciclo 2, com o ajuste do Agir, 16/11: 09h34, Autor A, homologação do commit com a segunda mudança, sem falha; 09h37, pedido de aprovação à direção; 09h38, etiqueta `v1.1.1` e notas da versão, criadas com apoio de IA a partir do relato de que a direção já tinha aprovado; 09h42, a direção aprovou. A etiqueta veio 4 minutos antes da aprovação. Liberação: [PREENCHER - autores]
 - Localizar commit, artefato e notas a partir da etiqueta, por quem não fez a baseline (Autor B): [PREENCHER - autores]
 
 ## Estudar
