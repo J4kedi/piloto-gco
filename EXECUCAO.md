@@ -61,20 +61,20 @@ O que não ficou bom vai em "Estudar" da mesma ficha, e o ajuste, em "Agir".
 ## Sábado, 14/11: liberação e auditoria (GCO 5)
 
 - [x] **14. GCO 2 e GCO 4: liberação.** Pela rotina da empresa, sem passo novo. Verifiquem a versão e preencham o registro de liberação, na pasta privada. Se a verificação falhar, escrevam a nota de incidente. Se a empresa não liberar até sábado, declarem a liberação como não ocorrida e auditem até a baseline.
-- [ ] **15. GCO 5: auditoria.** O Autor B responde os vinte itens na cópia do checklist, com o Autor A mostrando as evidências. Item que o termo não permite executar na empresa, como o teste de restauração, fica `NA`, com o motivo; a simulação cobre esse caminho em C7. Cada não conformidade fica com responsável e prazo, na pasta privada.
+- [x] **15. GCO 5: auditoria.** O Autor B responde os vinte itens na cópia do checklist, com o Autor A mostrando as evidências. Item que o termo não permite executar na empresa, como o teste de restauração, fica `NA`, com o motivo; a simulação cobre esse caminho em C7. Cada não conformidade fica com responsável e prazo, na pasta privada.
 - [x] **16. Indicadores de GC do piloto real.** Ver "Indicadores", abaixo.
 - [ ] **17. Simulação: C4, script avulso e C5,** nesta ordem. *Parcial ou não executado em 16/11: `RELATORIO.md`, seção 2.*
 - [ ] **18. Simulação: C7,** auditoria e restauração, com a tabela do checklist respondida no registro. *Parcial ou não executado em 16/11: `RELATORIO.md`, seção 2.*
 - [ ] **19. Indicadores da simulação.** Com as planilhas e os registros em commit na `main`: `python indicadores/indicadores.py coletar` e `python indicadores/indicadores.py`. *Parcial ou não executado em 16/11: `RELATORIO.md`, seção 2.*
-- [ ] **20. Fichas.** Preencham o "Executar" da ficha GCO5 e completem o das outras com a liberação e com os cenários da simulação.
+- [x] **20. Fichas.** Preencham o "Executar" da ficha GCO5 e completem o das outras com a liberação e com os cenários da simulação.
 
 ## Domingo, 15/11: avaliação, ajustes e parecer
 
-- [ ] **21. Estudar e agir.** Em cada uma das cinco fichas: o critério foi atendido, o que não ficou bom e a decisão (`manter`, `ajustar` ou `abandonar`).
+- [x] **21. Estudar e agir.** Em cada uma das cinco fichas: o critério foi atendido, o que não ficou bom e a decisão (`manter`, `ajustar` ou `abandonar`).
 - [ ] **22. Entrevista de validação.** Apliquem `ENTREVISTA.md` a quem usou o processo na empresa (quem revisou, liberou ou acompanhou a mudança), identificado só pela função. Se ninguém além dos autores participou, declarem isso no relatório: a entrevista fica para a validação com a empresa.
-- [ ] **23. Relatório, seções 1 a 4 e 6.** Preencham `RELATORIO.md` a partir das fichas, dos registros e de `registros/indicadores.md`.
-- [ ] **24. Avaliação dos resultados do piloto.** Seção 5 do relatório: uma linha por resultado de GCO, com o que foi proposto, o que foi usado, o que não funcionou e o ajuste.
-- [ ] **25. Nova versão do TO-BE.** Da coluna "Ajuste" e do "Agir" das fichas, listem o que muda no TO-BE e em cada artefato. Essa lista vai para o documento do Projeto Final. Os arquivos de `artefatos/` só mudam depois, na nova versão.
+- [x] **23. Relatório, seções 1 a 4 e 6.** Preencham `RELATORIO.md` a partir das fichas, dos registros e de `registros/indicadores.md`.
+- [x] **24. Avaliação dos resultados do piloto.** Seção 5 do relatório: uma linha por resultado de GCO, com o que foi proposto, o que foi usado, o que não funcionou e o ajuste.
+- [x] **25. Nova versão do TO-BE.** Da coluna "Ajuste" e do "Agir" das fichas, listem o que muda no TO-BE e em cada artefato. Essa lista vai para o documento do Projeto Final. Os arquivos de `artefatos/` só mudam depois, na nova versão.
 - [ ] **26. Parecer do avaliador externo.** Enviem ao avaliador o endereço do repositório e a folha de parecer assim que as fichas estiverem preenchidas. O parecer recebido até 15/11 vai para a seção 7 do relatório, com a identificação que o avaliador autorizar.
 
 ## Segunda, 16/11: documento e entrega até as 23h59

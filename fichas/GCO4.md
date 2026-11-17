@@ -29,7 +29,7 @@ Critério mantido. O Autor A faz os commits da mudança no formato da orientaç�
 
 *O critério foi atendido? O que não ficou bom: tipo que faltou ou sobrou, regra que conflita com o que a equipe já usa, campo do registro que a liberação real não fornece, tempo gasto.*
 
-Critério ainda não verificável por inteiro: o commit seguiu a orientação, mas a leitura "entre as duas etiquetas" e o registro de liberação dependem da baseline e da liberação.
+Critério atendido em parte: os commits dos dois ciclos seguiram a orientação, com escopo; as notas e o registro das duas liberações saíram; e o Autor B, que não fez a baseline, localizou commit, artefato e reversão só pelas notas da `v1.1.1` (ficha GCO3). O registro não tinha a impressão digital da cópia do banco.
 
 O que não ficou bom: a orientação não prevê o escopo (`<tipo>(<escopo>): ...`), que a equipe já usa e que a verificação automática dela aceita. Seguir a orientação à risca obrigaria a equipe a abandonar uma convenção que já funciona, e o indicador do roteiro contou o commit como fora do padrão.
 
@@ -37,4 +37,4 @@ O que não ficou bom: a orientação não prevê o escopo (`<tipo>(<escopo>): ..
 
 *`manter`, `ajustar` ou `abandonar` o artefato, com o motivo. Se `ajustar`: o que muda no artefato e no fluxo, para a nova versão do TO-BE.*
 
-`ajustar`. A orientação de commits passa a aceitar escopo opcional, `<tipo>(<escopo>): <resumo> (#<nº da demanda>)`, compatível com o Conventional Commits e com a verificação que a equipe já tem; o comando do indicador muda junto.
+`ajustar`. A orientação de commits passa a aceitar escopo opcional, `<tipo>(<escopo>): <resumo> (#<nº da demanda>)`, compatível com o Conventional Commits e com a verificação que a equipe já tem; o comando do indicador muda junto. O registro de liberação passa a incluir a impressão digital da cópia do banco.
